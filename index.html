@@ -1048,7 +1048,7 @@ Give a frank 3-4 sentence investor analysis. Mention what's strong, what's weak,
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'x-api-key': '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', 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 1000,
@@ -1101,7 +1101,7 @@ For estimatedRent, estimate based on bedrooms, location, and typical market rent
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'x-api-key': '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', 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 1000,
